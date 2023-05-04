@@ -7,6 +7,7 @@
 //  Log输出格式自定义(遵循DDLogFormatter协议，然后实现formatLogMessage:方法)
 
 #import <Foundation/Foundation.h>
+#import <CocoaLumberjack/CocoaLumberjack.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

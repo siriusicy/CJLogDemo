@@ -6,7 +6,8 @@
 //  Copyright © 2020 shixueqian. All rights reserved.
 //  自定义Log文件管理类。(继承DDLogFileManagerDefault类，重写对应的方法)
 
-#import "DDFileLogger.h"
+#import <Foundation/Foundation.h>
+#import <CocoaLumberjack/CocoaLumberjack.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

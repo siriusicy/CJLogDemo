@@ -30,7 +30,7 @@
             logLevel = @"Verbose";
             break;
     }
-    NSString *formatLog = [NSString stringWithFormat:@"%@[类型]%@ [方法名]%@ [第%ld行]\n%@",
+    NSString *formatLog = [NSString stringWithFormat:@"%@--------------- [类型]%@ ---------------\n [方法名] %@ [第%ld行]\n[打印值] : %@",
                            logMessage->_timestamp,
                            logLevel,
                            logMessage->_function,
