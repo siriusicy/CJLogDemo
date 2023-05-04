@@ -42,9 +42,6 @@ DDLogLevel ddLogLevel = DDLogLevelWarning;
     return sharedInstance;
 }
 
-
-
-
 #pragma mark - Logger添加及删除
 
 //添加控制台logger

@@ -24,8 +24,6 @@ extern DDLogLevel ddLogLevel;
 #define LogV(frmt, ...)       DDLogVerbose(frmt, ##__VA_ARGS__)
 
 
-
-
 @interface SQLogManager : NSObject
 
 //初始化

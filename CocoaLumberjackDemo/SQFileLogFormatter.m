@@ -30,7 +30,12 @@
             logLevel = @"Verbose";
             break;
     }
-    NSString *formatLog = [NSString stringWithFormat:@"%@[SQ]%@%@-%ld\n%@",logMessage->_timestamp, logLevel,logMessage->_function,logMessage->_line,logMessage->_message];
+    NSString *formatLog = [NSString stringWithFormat:@"%@[类型]%@ [方法名]%@ [第%ld行]\n%@",
+                           logMessage->_timestamp,
+                           logLevel,
+                           logMessage->_function,
+                           logMessage->_line,
+                           logMessage->_message];
     return formatLog;
 }
 
@@ -39,7 +44,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         dateFormatter = [NSDateFormatter new];
-        [dateFormatter setDateFormat:@"YYYY.MM.dd-HH.mm.ss.SSS"];
+        [dateFormatter setDateFormat:@"yyyy.MM.dd-HH.mm.ss.SSS"];
     });
     return [dateFormatter stringFromDate:date];
 }
